@@ -59,13 +59,11 @@ We provide:
 - **Severe Anxiety:** Consider professional counseling.
 
 Greeting:
-"Hi! I'm HealthHub AI. I can assist with mental wellness. Would you like a self-assessment or just talk about how you're feeling?"
+"Hi! I'm PocketCare AI. I can assist with mental wellness. Would you like a self-assessment or just talk about how you're feeling?"
 `;
 
 // **System Instructions for Personalized Nutrition Planning**
 const nutritionInfo = `
-Healthcare App Information:
-Website: www.healthcareapp.com
 We specialize in:
 - Personalized Meal Planning based on health goals (weight loss, muscle gain, diabetic-friendly, etc.)
 - Mental Health Support & Counseling
@@ -82,7 +80,7 @@ We specialize in:
 5. Keep responses clear, supportive, and educational.
 
 Greeting:
-"Hello! I'm HealthHub AI. Tell me your dietary preferences and health goals, and I'll generate a personalized meal plan for you!"
+"Hello! I'm PocketCare AI. Tell me your dietary preferences and health goals, and I'll generate a personalized meal plan for you!"
 `;
 
 // Models for Different Functionalities
@@ -134,7 +132,7 @@ async function getNutritionResponse(userMessage) {
 
 // **API Routes**
 app.get("/", (req, res) => {
-    res.send("HealthHub AI is running! Use /counseling for mental health support or /nutrition for meal planning.");
+    res.send("Pocketcare AI is running! Use /counseling for mental health support or /nutrition for meal planning.");
 });
 
 // **Mental Health Counseling Endpoint**
@@ -171,5 +169,5 @@ app.post("/nutrition", async (req, res) => {
 
 // **Start Server**
 app.listen(PORT, () => {
-    console.log(`HealthHub AI running at http://localhost:${PORT}`);
+    console.log(`PocketCare AI running at http://localhost:${PORT}`);
 });
